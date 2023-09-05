@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+body {
+  background: #E3F2FD;
+}
+
+/*------------------------ Navbar Styling start------------------------------ */
+
+nav{
+  background: #5372F0;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  color: white;
+  font-size: 25px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 15px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+a.active,a:hover{
+  background: #1b9bff;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+/*---------------------- Navbar Styling End ------------------------------*/
+
+
+/*---------------------- Weather styling End -----------------------------*/
+.container {
+  display: flex;
+  width: 100%;
+  gap: 35px;
+  padding: 30px;
+  text-align: center;
+}
+.weather-input {
+  width: 550px;
+}
+.weather-input input {
+  height: 46px;
+  width: 100%;
+  outline: none;
+  font-size: 1.07rem;
+  padding: 0 17px;
+  margin: 10px 0 20px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.weather-input input:focus {
+  padding: 0 16px;
+  border: 2px solid #5372F0;
+}
+.weather-input .separator {
+  height: 1px;
+  width: 100%;
+  margin: 25px 0;
+  background: #BBBBBB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.weather-input .separator::before{
+  content: "or";
+  color: #6C757D;
+  font-size: 1.18rem;
+  padding: 0 15px;
+  margin-top: -4px;
+  background: #E3F2FD;
+}
+.weather-input button {
+  width: 100%;
+  padding: 10px 0;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #fff;
+  background: #5372F0;
+  transition: 0.2s ease;
+}
+.weather-input .search-btn:hover {
+  background: #2c52ed;
+}
+.weather-input .location-btn {
+  background: #33b249;
+}
+.weather-input .location-btn:hover {
+  background: #3eaa8b;
+}
+.weather-data {
+  width: 100%;
+}
+.weather-data .current-weather {
+  color: #fff;
+  background: #5372F0;
+  border-radius: 5px;
+  padding: 20px 70px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.current-weather h2 {
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+.weather-data h6 {
+  margin-top: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.current-weather .icon {
+  text-align: center;
+}
+.current-weather .icon img {
+  max-width: 120px;
+  margin-top: -15px;
+}
+.current-weather .icon h6 {
+  margin-top: -10px;
+  text-transform: capitalize;
+}
+.days-forecast h2 {
+  margin: 20px 0;
+  font-size: 1.5rem;
+}
+.days-forecast .weather-cards {
+  display: flex;
+  gap: 20px;
+}
+.weather-cards .card {
+  color: #fff;
+  padding: 18px 16px;
+  list-style: none;
+  width: calc(100% / 5);
+  background: #80669d;
+  border-radius: 5px;
+}
+.weather-cards .card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.weather-cards .card img {
+  max-width: 70px;
+  margin: 5px 0 -12px 0;
+}
+
+/*---------------------- Weather styling End -----------------------------*/
+
+
+/*---------------------- Blog Section styling Start -----------------------------*/
+
+.blog-container{
+  width: 100%;
+  margin-top: 70px;
+  margin-bottom: -100px;
+}
+
+.blog-section{
+  width: 85%;
+  margin: 20px auto;
+}
+
+.blog-section .title{
+  width: 60%;
+  text-align: center;
+  margin: auto;
+
+}
+
+.blog-section .title h2{
+  font-size: 30px;
+  color: #5372F0;
+}
+
+.blog-section .title p{
+  font-size: 18px;
+  color: #7e7e7e;
+  margin-top: 20px;
+}
+
+.blog-cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  margin: 25px auto;
+}
+
+.blog-cards .blog-card{
+  width: 100%;
+  position: relative;
+}
+
+.image-section img{
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.content{
+  padding: 15px 20px;
+}
+
+.content h4{
+  font-size: 24px;
+  color: #222;
+  font-weight: 500;
+  margin-top: -5px;
+}
+
+.content p{
+  color: #7e7e7e;
+  font-size: 15px;
+  padding-top: 8px;
+}
+
+.content a{
+  text-decoration: none;
+  color: #fff;
+  margin-top: 12px;
+  display: inline-block;
+  background-color: #33b249;
+  padding: 8px 15px;
+}
+
+.content a:hover{
+  background-color: #5372F0;
+}
+
+@media screen and (max-width: 992px){
+  .blog-cards{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px){
+  .blog-cards{
+    grid-template-columns: 1fr;
+  }
+
+  .blog-section .title{
+    width: 100%;
+  
+  }
+
+}
+
+/*---------------------- Blog Section styling End -----------------------------*/
+
+
+/*---------------------- Footer styling Start -----------------------------*/
+
+.footer-container{
+	max-width: 1170px;
+	margin:auto;
+  margin-bottom: -30px;
+}
+.footer-row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #ECF3FC;
+  padding: 70px 0;
+  margin-top: 200px;
+  margin-bottom: -50px;
+
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #111111;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #350add;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #111111;
+	text-decoration: none;
+	font-weight: 300;
+	color: #111111;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #111111;
+	padding-left: 8px;
+  background: none;
+}
+
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+.footer-container{
+  margin-bottom: -100px;
+}
+
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+
+}
+
+/* -------------------------Footer styling End -----------------------------------*/
+
+
+/* -----------------MediaQueary for Wheather styling Start---------------------- */
+
+@media (max-width: 1400px) {
+  .weather-data .current-weather {
+    padding: 20px;
+  }
+  .weather-cards {
+    flex-wrap: wrap;
+  }
+  .weather-cards .card {
+    width: calc(100% / 4 - 15px);
+  }
+}
+
+@media (max-width: 1200px) {
+  .weather-cards .card {
+    width: calc(100% / 3 - 15px);
+  }
+}
+
+
+@media (max-width: 950px) {
+  .weather-input {
+    width: 450px;
+  }
+  .weather-cards .card {
+    width: calc(100% / 2 - 10px);
+  }
+
+}
+
+
+@media (max-width: 750px) {
+  h1 {
+    font-size: 1.45rem;
+    padding: 16px 0;
+  }
+  .container {
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+  .weather-input {
+    width: 100%;
+  }
+  .weather-data h2 {
+    font-size: 1.35rem;
+  }
+
+}
+
+/* ---------------------MediaQueary for Wheather styling End ------------------ */
+
+
+ /*----------------------------- Media Navbar start--------------------------------- */
+
+@media (max-width: 952px){
+  
+  label.logo{
+    font-size: 25px;
+    padding-left: 30px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  nav>ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section{
+  background: url(bg1.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
+}
+
+/*----------------------------- Media Navbar End--------------------------------- */
